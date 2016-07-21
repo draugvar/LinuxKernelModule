@@ -1,0 +1,9 @@
+#include <linux/ioctl.h>
+
+/* IOCTL */
+#define MAILBOX_GET_MAX_BUFFER_SIZE _IOR(250, 0, int)
+#define MAILBOX_SET_MAX_BUFFER_SIZE _IOW(250, 1, int)
+#define MAILBOX_GET_MAX_MESSAGES _IOR(250, 2, int)
+#define MAILBOX_SET_MAX_MESSAGES _IOW(250, 3, int)
+#define MAILBOX_SET_BLOCKING _IO(250, 4)
+#define MAILBOX_RESET_BLOCKING _IO(250, 5)
